@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #121321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    transform: translate(-150px, -100px);
+    border-radius: 50%;
+    background: linear-gradient(90deg, #f3f5f5, #9c27b0);
+}
+
+section::after {
+    content: " ";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    transform: translate(150px, 100px);
+    border-radius: 50%;
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+
+.container {
+    position: relative;
+    height: 2.2in;
+    width: 3.3in;
+    z-index: 100;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur (25px);
+    border-radius: 25px;
+    padding: 15px 15px 15px px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
+
+.header-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-area img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h5 {
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 12px;
+    background-color: rgb(0, 253, 253);
+    color: black;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgb(7, 232, 232, 1);
+}
+
+.card-ditals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+}
+
+h3 {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: oblique;
+    margin-top: 10px;
+    color: aqua;
+}
+
+h4 {
+    margin: 5px;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16PX;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: aqua;
+}
+
+.student-image {
+    width: 70px;
+    margin-top: 15px;
+}
+
+.student-image img {
+    width: 100%;
+    border-radius: 3px;
+}
